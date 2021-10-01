@@ -7,25 +7,38 @@ body,
   font-size: 62.5%;
 }
 body {
-  background-image: linear-gradient(#b8d3fe, #a8a5a5);
+  background-image: linear-gradient(#b8d3fe, #e8e8e8);
+}
+
+#head {
+  font-size: 9rem;
+  font-family: "Sriracha", cursive;
+  text-align: center;
+}
+.parent h1 {
+  text-decoration: underline;
 }
 
 .parent {
   display: flex;
   justify-content: space-around;
   text-align: center;
-  font-size: 8rem;
-  margin: 4rem;
+  font-size: 9rem;
+  font-family: "Sriracha", cursive;
+  margin: 3rem;
 }
 
 .parent img {
-  width: 40vh;
+  width: 36vh;
   border-radius: 5%;
-  padding: 2rem;
+  border: black solid;
+  margin: 1rem;
 }
 
 .post {
-  border: black 5px;
-  border-radius: 5%;
-  padding: 3rem;
+  border: black 0.6rem solid;
+  border-radius: 1rem;
+  padding: 2rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
