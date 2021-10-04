@@ -7,7 +7,7 @@ body,
   font-size: 62.5%;
 }
 body {
-  background-image: linear-gradient(#b8d3fe, #e8e8e8);
+  background-image: linear-gradient(#b8d3fe, #ddd8d8);
 }
 
 #head {
@@ -15,6 +15,7 @@ body {
   font-family: "Sriracha", cursive;
   text-align: center;
 }
+
 .parent h1 {
   text-decoration: underline;
 }
@@ -25,20 +26,21 @@ body {
   text-align: center;
   font-size: 9rem;
   font-family: "Sriracha", cursive;
-  margin: 3rem;
+  margin: 4rem;
 }
 
 .parent img {
   width: 36vh;
-  border-radius: 5%;
-  border: black solid;
+  border-radius: 1.3rem;
   margin: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .post {
-  border: black 0.6rem solid;
-  border-radius: 1rem;
+  background-color: rgb(233, 250, 255);
+  border-radius: 1.3rem;
   padding: 2rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
-    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
