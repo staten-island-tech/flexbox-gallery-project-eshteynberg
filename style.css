@@ -31,18 +31,10 @@ body {
   background-position: 0 100%;
 }
 
-.parent h1 {
-  transition-property: left right;
-  transition: ease-out 500ms;
-}
-
-.parent h1:hover {
-  text-decoration: underline;
-}
-
 .parent {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
+  flex-direction: row;
   text-align: center;
   font-size: 9rem;
   font-family: "Sriracha", cursive;
@@ -55,12 +47,10 @@ body {
   margin: 1rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
 }
 
 .parent img:hover {
   filter: none;
-  -webkit-filter: grayscale(0);
 }
 
 .post {
@@ -71,8 +61,31 @@ body {
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
     rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
   transition: 800ms all;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  flex-basis: 33.333333%;
 }
 
 .post:hover {
   transform: scale(1.07);
+}
+
+.underline {
+  display: inline-block;
+  color: black;
+}
+.underline:after {
+  content: "";
+  display: block;
+  height: 1rem;
+  width: 0;
+  background: transparent;
+  transition: width 0.5s ease, background-color 0.5s ease;
+}
+
+.underline:hover:after {
+  width: 100%;
+  background: black;
 }
