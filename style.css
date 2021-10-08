@@ -33,12 +33,12 @@ body {
 
 .parent {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
   text-align: center;
+  justify-content: space-around;
   font-size: 9rem;
   font-family: "Sriracha", cursive;
   margin: 4rem;
+  flex-wrap: wrap;
 }
 
 .parent img {
@@ -65,27 +65,25 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  flex-basis: 33.333333%;
+  margin: 2.4rem;
 }
 
 .post:hover {
   transform: scale(1.07);
 }
 
-.underline {
-  display: inline-block;
-  color: black;
-}
-.underline:after {
-  content: "";
-  display: block;
-  height: 1rem;
-  width: 0;
-  background: transparent;
-  transition: width 0.5s ease, background-color 0.5s ease;
+.parent h2{
+  transition 400ms all;
 }
 
-.underline:hover:after {
-  width: 100%;
-  background: black;
+.parent h2:hover {
+  transform: translateY(-8px);
+}
+
+.parent h3{
+  transition: 700ms all;
+}
+
+.parent h3:hover{
+  transform: rotate(360deg);
 }
