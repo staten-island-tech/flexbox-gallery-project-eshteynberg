@@ -16,8 +16,8 @@ body {
   text-align: center;
   background: linear-gradient(
     to right,
-    rgb(12, 12, 66) 50%,
-    rgb(32, 69, 180) 50%
+    rgb(16, 93, 36) 50%,
+    rgb(22, 49, 131) 50%
   );
   background-clip: text;
   -webkit-background-clip: text;
@@ -72,18 +72,31 @@ body {
   transform: scale(1.07);
 }
 
-.parent h2{
-  transition 400ms all;
-}
-
-.parent h2:hover {
-  transform: translateY(-8px);
-}
-
-.parent h3{
+.parent h2 {
   transition: 700ms all;
 }
 
-.parent h3:hover{
+.parent h2:hover {
   transform: rotate(360deg);
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  60%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-20px);
+  }
+
+  80% {
+    transform: translateY(-10px);
+  }
+}
+
+.parent h3:hover {
+  animation: bounce 0.8s;
 }
