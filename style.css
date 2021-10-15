@@ -108,3 +108,41 @@ body {
     opacity: 1;
   }
 }
+
+@media screen and (max-width: 1280px) {
+  .post {
+    padding: 20px 3px;
+  }
+  .parent img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #head {
+    font-size: 8rem;
+  }
+  .post {
+    padding: 40px 60px;
+  }
+  .parent img {
+    width: 46vh;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  #head {
+    font-size: 5.7rem;
+  }
+  .parent {
+    font-size: 6rem;
+    align-items: center;
+    margin: 2rem;
+  }
+  .post {
+    padding: 25px 15px;
+  }
+  .parent img {
+    width: 36vh;
+  }
+}
